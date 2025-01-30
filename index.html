@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse4Pets</title>
+    <!-- Tailwind CSS link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sora-text {
+        font-family: "Sora", serif;
+      }
+      .adlam-title {
+        font-family: "ADLaM Display", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+    </style>
+    <!-- Theme Color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "cream-clr": "#FFF9F4",
+                "yellow-clr":"#FFDC2680",
+                "btn-color": "#FFDC26",
+                
+              },
+            },
+          },
+        };
+      </script>
+  </head>
+  <body>
+    <header>
+      <div class="">
+        <h1 class="bg-yellow-clr adlam-title">Hellow pet</h1>
+      </div>
+    </header>
+    <main>
+      <section></section>
+    </main>
+  </body>
 </html>
