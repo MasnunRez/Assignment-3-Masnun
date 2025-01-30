@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Browse4Pets</title>
     <!-- Tailwind CSS link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,31 +27,106 @@
         font-weight: 400;
         font-style: normal;
       }
-      
     </style>
     <!-- Theme Color -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                "cream-clr": "#FFF9F4",
-                "yellow-clr":"#FFDC2680",
-                "btn-color": "#FFDC26",
-                
-              },
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "cream-clr": "#FFF9F4",
+              "yellow-clr": "#FFDC2680",
+              "btn-color": "#FFDC26",
             },
           },
-        };
-      </script>
+        },
+      };
+    </script>
   </head>
-  <body>
-    <header>
-      <div class="">
-        <h1 class="bg-yellow-clr adlam-title">Hellow pet</h1>
+  <body class="sora-text">
+    <header class="">
+      <!-- Nagigation section  -->
+      <div class="flex items-center bg-cream-clr h-[100px]">
+        <nav class="md:w-[1320px] mx-auto">
+          <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                >
+                  <li><a>Item 1</a></li>
+                  <li><a>Parent</a></li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <!-- Logo -->
+              <a href="#" class="">
+                <div class="flex items-center gap-3">
+                  <img src="images/logo-header.png" alt="" />
+                  <p class="text-[26px]">
+                    Browse<span class="text-yellow-clr">4</span>Pets
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 sora-text text-xl">
+                <li><a class="hover:bg-btn-color">Find a pet</a></li>
+                <li><a class="hover:bg-btn-color">Breeds</a></li>
+                <li><a class="hover:bg-btn-color">Contact us</a></li>
+              </ul>
+            </div>
+
+            <!-- Buttons  -->
+            <div class="navbar-end gap-3">
+              <a href=""> <img src="images/bell icon.png" alt="" /></a>
+              <a href=""> <img src="images/search icon.png" alt="" /></a>
+              <a
+                class="btn btn-outline border-yellow-clr text-[20px] font-normal px-8"
+                >Login</a
+              >
+              <a class="btn bg-btn-color text-[20px] font-normal px-8"
+                >Register</a
+              >
+            </div>
+          </div>
+        </nav>
       </div>
+      <!-- Nav Ends -->
+      <!-- Banner Section  -->
+      <section class="md:w-[1320px] mx-auto">
+        <div class="bg-[url('/images/cat-big.png')] h-[750px] mt-[76px]">
+            <div class="w-[680px]">
+                <h1 class="text-[56px] adlam-title mb-4">Pamper Your Pet, Because They Deserve the Best</h1>
+                <p class="text-xl mb-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <a
+                    class="btn bg-btn-color text-[20px] font-normal px-8"
+                    >Find a pet</a
+                >
+
+            </div>
+            
+        </div>
+      </section>
     </header>
-    <main>
+    <main class="md:w-[1320px] mx-auto">
       <section></section>
     </main>
   </body>
